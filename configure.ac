@@ -264,7 +264,7 @@ AC_CONFIG_FILES([
 	apps/bmxtranswrap/Makefile
 	tools/Makefile
 	msvc_build/Makefile
-	msvc_build/vs8/Makefile
+	msvc_build/vs10/Makefile
     bmx.pc])
 
 AC_OUTPUT
