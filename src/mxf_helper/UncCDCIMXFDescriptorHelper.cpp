@@ -139,7 +139,7 @@ bool UncCDCIMXFDescriptorHelper::IsSupported(EssenceType essence_type)
 
 size_t UncCDCIMXFDescriptorHelper::GetEssenceIndex(FileDescriptor *file_descriptor, mxfUL alternative_ec_label)
 {
-    mxfRational sample_rate = file_descriptor->getSampleRate();
+    mxfRational sample_rate = normalize_rate(file_descriptor->getSampleRate());
     mxfUL ec_label = file_descriptor->getEssenceContainer();
 
     size_t i;
