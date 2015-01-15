@@ -325,6 +325,11 @@ void D10File::CompleteWrite()
     footer_partition.write(mMXFFile);
 
 
+    // write the RIP
+
+    mMXFFile->writeRIP();
+
+
     if (mInputDuration < 0) {
         // update metadata sets with duration
 
